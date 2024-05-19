@@ -26,5 +26,19 @@
 */
 
 int task03(int number) {
-	return 0;
+	if (number < 2) {
+		return 0;
+	}
+
+	int n = 2;
+
+	for (int i = 2; i <= number; i++)
+	{
+		if (number % i == 0) {
+			n = i;
+			break;
+		}
+	}
+
+	return n;
 }
