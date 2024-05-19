@@ -28,5 +28,11 @@
 */
 
 bool task02(int number) {
+	
+	for (int i = 1; i <= number; i*=2)
+	{
+		if (i == number) { return true; }
+	}
+
 	return false;
 }
