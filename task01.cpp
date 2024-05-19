@@ -23,6 +23,20 @@
 */
 
 string task01(int number) {
-	
-	return "";
+	string s = "";
+
+	if (number < 1) {
+		return "0";
+	}
+
+	for (int i = 1; i * i <= number; i++)
+	{
+		s += to_string(i * i);
+
+		if ((i + 1) * (i + 1) <= number) {
+			s += " ";
+		}
+	}
+
+	return s;
 }
