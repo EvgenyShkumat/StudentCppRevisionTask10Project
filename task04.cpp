@@ -36,5 +36,6 @@ int task04(long long number) {
 		number /= 10;
 		count++;
 	}
+
 	return count;
 }
