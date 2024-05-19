@@ -25,5 +25,16 @@
 */
 
 int task04(long long number) {
-	return 0;
+	number = number < 0 ? -number : number;
+	int count = 0;
+
+	if (number == 0) {
+		return 1;
+	}
+
+	while (number != 0) {
+		number /= 10;
+		count++;
+	}
+	return count;
 }
